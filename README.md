@@ -44,49 +44,24 @@ AWS (Amazon Web Services) is a comprehensive and widely adopted cloud platform t
 ![Screenshot 2024-12-07 054329](https://github.com/user-attachments/assets/fcc5bf46-d10d-42e3-94bf-c0e79055b1ed)
 
 
+<h3>Step 3: Create VC </h3>
+
+- Click Create 
+
+![Screenshot 2024-12-07 055108](https://github.com/user-attachments/assets/7525b740-786e-4014-8e72-07758daf64e3)
+
+<h3>Step 3: Check Private and Public Subnets for proper routing </h3>
+
+- The public subnet has a Target to the internet gateway (Public)
+
+![Screenshot 2024-12-07 055842](https://github.com/user-attachments/assets/8b064ab0-2d1d-4b59-9ef6-3ddab79e4ab5)
+
+- The private subnet has a Target to AWS S3 only 
+  
+![Screenshot 2024-12-07 055929](https://github.com/user-attachments/assets/e0c59a06-fcb5-401a-90fd-ade7df40d1ce)
 
 
+![Screenshot 2024-12-07 055946](https://github.com/user-attachments/assets/a0e570d6-a047-40e3-abb6-1b6c91c087d3)
 
-
-<h3>Step 2: Create an IAM User with Amazon S3 Access</h3>
-
-- Go to the search bar at the top and search "IAM"
-- Select Users tab to the left 
-- You will need to name the user JohnDoe 
-- Then click create passwordd
--  Create a Custom password and follow the rules and unclick "User has to reset password on next login" 
-
- 
-![Screenshot 2024-12-04 143727](https://github.com/user-attachments/assets/fe05ddf6-bafa-43a4-9ef8-0cad535fc875)
-
-
-
-
-
-<h3>Step 3: Set Permissions to the IAM USer "JohnDoe" </h3>
-
-- Click custom policy
-- then click the Permissions Policy
-- Select or Search Amazon S3 Access 
-- You will need to select amazon S3 Access
-- Then click Next 
- 
-
-![Screenshot 2024-12-04 143953](https://github.com/user-attachments/assets/d636cb79-6e74-4a8b-b859-0fb763253c10)
-
-<h3>Step 4: Confirm IAM User</h3>
-     
-- Copy the sign in link provided for IAM User into another browser 
-
-![Screenshot 2024-12-04 144025](https://github.com/user-attachments/assets/962700ee-03ea-4240-9961-83db19d8fb90)
-
-- Log into the IAM user with the Username and Password created
-    - The number you see attatched in the login screen is the number assocaited with your root account 
-
-![Screenshot 2024-12-04 145254](https://github.com/user-attachments/assets/8589c3a8-f924-461d-a997-695276fa8a55)
-
-- As seen in the third picture below the "JohnDoe" account has permission restrictions flagged on his/her dashboard upon launch
-
-![Screenshot 2024-12-04 145335](https://github.com/user-attachments/assets/5bfff862-501b-48ce-b18a-97467e75497a)
 
 
